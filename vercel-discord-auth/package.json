@@ -1,0 +1,14 @@
+{
+  "name": "lsd-discord-auth-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod",
+    "check": "node --check api/login.js && node --check api/health.js && node --check api/config.js && node --check api/accounts.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
